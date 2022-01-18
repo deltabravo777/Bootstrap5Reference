@@ -1,0 +1,99 @@
+﻿body {
+}
+
+.customDiv {
+    margin:3px;
+    min-height:300px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+}
+
+.sidebarContent {
+    margin-bottom: 10px;
+    min-height: 150px;
+    background-color: silver;
+    text-align: center;
+    font-size: large;
+}
+
+.mainContent {
+    margin-bottom: 10px;
+    min-height: 310px;
+    background-color: silver;
+    text-align: center;
+    font-size: large;
+}
+
+img{
+    width:100%
+}
+
+.customThumbImage{
+    width:20%
+}
+
+.customDiv8 {
+    margin: 10px;
+    min-height: 50px;
+    background-color: silver;
+    text-align: center;
+    font-size: large;
+    padding:10px;
+}
+
+h1{
+    display:block;
+    white-space:normal;
+}
+h2 {
+    display: block;
+    white-space: normal;
+}
+h3 {
+    display: block;
+    white-space: normal;
+}
+h4 {
+    display: block;
+    white-space: normal;
+}
+h5 {
+    display: block;
+    white-space: normal;
+}
+h6 {
+    display: block;
+    white-space: normal;
+}
+
+hr{
+    border: 1px solid red;
+}
+
+.table-scrollable {
+    overflow-x: auto;
+    max-width: 600px;
+    box-shadow: inset 0 0 5px rgba(150, 150,150,0.35);
+    margin: auto;
+}
+
+.table {
+    display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.divStyle{
+    padding-top:50px;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+}
