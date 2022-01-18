@@ -1,0 +1,88 @@
+﻿<!--
+
+    Bootstrap Modal Methods and Events
+    -----------------------------------------------------
+    Bootstrap modal methods             Purpose
+    modal('show')                       shows the modal
+    modal('hide')                       hides the modal
+
+    Bootstrap modal events              Description
+    show.bs.modal                       fired immediately after modal('show') method is called
+    shown.bs.modal                      fired after the modal is completely shown
+    hide.bs.modal                       fired immediately after modal('hide') method is called
+    hidden.bs.modal                     fired after the modal is completely hidden
+
+
+-->
+<div class="container">
+    <br />
+    <div class="row d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width:initial">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputUserName">Username</label>
+                                <input class="form-control" placeholder="Login Username" type="text" id="inputUserName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input class="form-control" placeholder="Login Password" type="password" id="inputPassword" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        alert('hello');
+
+        $(document).ready(function () {
+            $('#btnShowModal').click(function () {
+                $('#exampleModal').modal('show');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#btnHideModal').click(function () {
+                $('#exampleModal').modal('hide');
+            });
+        });
+
+        $('#exampleModal').on('show.bs.modal', function () {
+            alert('Modal is about to be displayed');
+        });
+
+        $('#exampleModal').on('shown.bs.modal', function () {
+            alert('Modal is displayed');
+        });
+
+        $('#exampleModal').on('hide.bs.modal', function () {
+            alert('Modal is about to be hidden');
+        });
+
+        $('#exampleModal').on('hideen.bs.modal', function () {
+            alert('Modal is hidden');
+        });
+        
+    </script>
+}

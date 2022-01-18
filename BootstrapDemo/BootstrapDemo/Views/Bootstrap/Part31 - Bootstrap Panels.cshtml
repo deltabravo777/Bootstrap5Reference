@@ -1,0 +1,71 @@
+﻿<!--
+    
+    Bootstrap Panels
+    -----------------------------------------------
+    Bootstrap Panel Classes
+    Class                   Purpose
+    panel                   creates a panel
+    panel-default           applies default contextual stling to the panel. other contextual state classes like
+                            panel-primary, panel-success, panel-info, panel-warning and panel-danger can also be used
+    panel-heading           creates a panel heading
+    panel-title             for styling the title in the panel heading
+    panel-body              creates a panel body
+    panel-footer            creates a panel footer
+
+    ! in bootstrap 5 they are not called cards and not panels
+    ! the width of the table also seems to be dependant on the amount of data there is in the table for it to be sized, otherwise it may be
+      "too small to stretch", use table-responsive and w-100 2-auto and things like that
+-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h6>Bootstrap</h6>
+                </div>
+                <div class="row">
+                    <div class="card-body">
+                        Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+                        A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.[3]
+                        After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.[4] It has continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a large community of contributors.[5]
+                    </div>
+                </div>
+                <div class="container table-responsive">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mary</td>
+                                <td>Kay</td>
+                                <td>marykay@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>John</td>
+                                <td>Underwood</td>
+                                <td>johnunderwood@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Sam</td>
+                                <td>Machintosh</td>
+                                <td>sammacintosh@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer">
+                <h6>This is a footer</h6>
+            </div>
+        </div>
+    </div>
+</div>

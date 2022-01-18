@@ -1,0 +1,54 @@
+﻿<!--
+
+    Bootstrap Tooltip Manual Trigger
+    ---------------------------------------------
+    the trigger option specifies how the tooltip should be triggered
+
+    Tooltip trigger option values
+    hover
+    focux
+    click
+    manual - cannot be combined with other triggers
+
+
+
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <br />
+            <br />
+
+            Name : <input type="text" id="txtName" title="Bootstrap tooltip"
+                          data-toggle="tooltip" />
+            <i class="bi bi-info-circle" id="infoIcon"></i>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        alert('hello');
+
+        $(document).ready(function () {
+            $('#txtName').tooltip({
+                trigger: 'hover'
+            });
+        });
+
+        $('#infoIcon').click(function () {
+            $('#txtName').tooltip('toggle');
+        });
+
+        $('#infoIcon').hover(function () {
+            $('#txtName').tooltip('toggle');
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+
+}

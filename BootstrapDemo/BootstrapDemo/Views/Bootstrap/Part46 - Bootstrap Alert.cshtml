@@ -1,0 +1,47 @@
+﻿<!--
+
+    Bootstrap Alert
+    ---------------------------------------
+    creating an alert with bootstrap is easy. all we need to do is create a <div> element with classes 'alert'
+    and one of the following contextual state classes
+
+    alert contextual classes
+    alert-danger
+    alert-success
+    alert-info
+    alert-warning
+
+-->
+<div class="container">
+    <div>
+        <br />
+        <br />
+
+        <button id="btnSubmit" class="btn btn-primary">Submit</button>
+        <br />
+        <br />
+
+        <div class="alert alert-warning alert-dismissible fade" id="myAlert" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button id="linkClose" type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        alert('hello');
+
+        $('#btnSubmit').click(function () {
+            $('#myAlert').addClass('show');
+        });
+
+        $('#linkClose').click(function () {
+            $('#myAlert').removeClass('show');
+        });
+
+    </script>
+
+}
+

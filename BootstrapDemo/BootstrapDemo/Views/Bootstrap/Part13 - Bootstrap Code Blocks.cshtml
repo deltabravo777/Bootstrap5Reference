@@ -1,0 +1,129 @@
+﻿<!--
+
+    Bootstrap Code Blocks
+    ----------------------------------------
+    Bootstrap tags for styling code blocks
+    Tag                 Purpose
+    <code>              For styling inline snippets of cpde
+    <pre>               For styling multiple lines of code
+    <var>               For stlying variables
+    <samp>              For styling sample output
+    <kbd>               For styling keyboard input
+
+
+    styleing inline snippets of code: (angle brackets must be escaped for propert rendering)
+    to highlight text use: <mark> tag
+    to underline text use: <u> tag
+    for hold text use <strong> tag
+
+    Styling multiple lines of code
+    > pre-scrollable class creates a y-axis scroll for the large text to be compacted
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>To highlight text use <code>&lt;mark&gt;</code></p>
+            <p>to underline text use <code>&lt;u&gt;</code></p>
+            <p>For bold text <code>&lt;strong&gt;</code></p>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <strong>Bold Text</strong><br />
+        <u>Underlined</u><br />
+        <mark>Highlighted Text</mark>
+    </div>
+    <hr />
+    <div>
+        <pre>&lt;strong&gt;Bold Text&lt;/strong&gt;
+&lt;u&gt;Underlined Text&lt;/u&gt;
+&lt;mark&gt;Highlighted Text&lt;/mark&gt;</pre>
+        <!-- remove whitespace and line breaks -->
+    </div>
+    <hr />
+    <div>
+    <pre class="pre-scrollable">public class Program
+{
+    public static void Main()
+    {
+        Customer customer1 = new Customer()
+        {
+            ID = 101,
+            Name = "Mark",
+            Salary = 5000
+        };
+        Customer customer2 = new Customer()
+        {
+            ID = 102,
+            Name = "Pam",
+            Salary = 7000
+        };
+        Customer customer3 = new Customer()
+        {
+            ID = 104,
+            Name = "Rob",
+            Salary = 5500
+        };
+        Customer[] arrayCustomers = new Customer[2];
+        arrayCustomers[0] = customer1;
+        arrayCustomers[1] = customer2;
+       
+        List<customer> listCustomers = new List<customer>(2);
+        listCustomers.Add(customer1);
+        listCustomers.Add(customer2);
+        listCustomers.Add(customer3);
+        Customer cust = listCustomers[0];
+        Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                           cust.ID, cust.Name, cust.Salary);
+        Console.WriteLine("--------------------------------");
+       
+        for (int i = 0; i < listCustomers.Count; i++)
+        {
+            Customer customer = listCustomers[i];
+            Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                     customer.ID, customer.Name, customer.Salary);
+        }
+        Console.WriteLine("--------------------------------");
+       
+        foreach (Customer c in listCustomers)
+        {
+            Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                                c.ID, c.Name, c.Salary);
+        }
+        Console.WriteLine("--------------------------------");
+       
+        listCustomers.Insert(1, customer3);
+        Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+               listCustomers[1].ID, listCustomers[1].Name,
+               listCustomers[1].Salary);
+        Console.WriteLine("--------------------------------");
+       
+        Console.WriteLine("Index of Customer3 object in the List = "
+                           + listCustomers.IndexOf(customer3));
+        Console.WriteLine("--------------------------------");
+    }
+}</pre>
+    </div>
+    <hr />
+    <div>
+        var <var>fullName</var> = <var>firstName</var> + <var>lastName</var>
+    </div>
+    <hr />
+    <div>
+        <h4>Output</h4>
+        <samp>Hello world!</samp>
+    </div>
+    <hr />
+    <div>
+        <h4>Visual Studio</h4>
+        <p>
+            Keyboard schortcut for commenting code
+            <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>C</kbd>
+        </p>
+        <p>
+            Keyboard schortcut for uncommenting code
+            <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>U</kbd>
+        </p>
+    </div>
+</div>

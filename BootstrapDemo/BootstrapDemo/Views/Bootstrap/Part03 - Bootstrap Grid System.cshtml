@@ -1,0 +1,77 @@
+﻿<!--
+
+    Bootstrap Grid System
+    -------------------------------------------------------------------------------------------------
+    Bootstrap Grid System is used for creating page layouts through a series of rows and columns. the
+    Grid System consists of 12 columns
+    1 2 3 4 5 6 7 8 9 10 11 12
+
+    3 Column Layout using the Bootstrap Grid System:
+    Left Side Bar           Main Content Area           Right Side Bar
+
+    -- this has a 1-4-1 ratio
+    -- or use 2-8-2
+
+    Bootstrap Grid Classes:
+    Device                                                      Bootstrap Class
+    ---------------------------------------------------------------------------
+    Extra small devices - Mobile Phones <768px                  .col-xs.*
+    Small Devices - Tablets  >= 768px                           .col-sm-*
+    Medium Devices - Desktops >= 992px                          .col-md-*
+    Large Devices - Desktops >= 1200px                          .col-lg-*
+
+    we will start with .col-md-*
+
+    -- we can make a container with a container class
+    -- the star stands for the number of columns we want it to take up
+    -- md stands for medium device
+    -- rows must be placed within a container for proper alignment and padding
+    -- content should be placed within columns and columns are direct children of a row
+    -- if the sum of the columns is more than 13, it is pushed to a new line
+    -- if we want 4 columns of equal width, we would be call - md - 3
+-->
+
+<div>this is part three</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="customDiv">Left Side Bar</div>
+        </div>
+        <div class="col-md-8">
+            <div class="customDiv">Main Content Area</div>
+        </div>
+        <div class="col-md-2">
+            <div class="customDiv">Right Side Bar</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column 1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column 2</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column 3</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column 4</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="customDiv">Column 1</div>
+        </div>
+        <div class="col-md-4">
+            <div class="customDiv">Column 2</div>
+        </div>
+        <div class="col-md-4">
+            <div class="customDiv">Column 3</div>
+        </div>
+        <div class="col-md-2">
+            <div class="customDiv">Column 4</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+﻿<!--
+    
+    Bootstrap Button Classes
+    ------------------------------------------------
+    Button Classes can be used on
+    <a>
+    <button>
+    <input type="button">
+    <input type="submit">
+
+    Button Classes              Purpose
+    btn-default                 Standard Button
+    btn-primary                 Indicates the primary action in a set of buttons
+    btn-success                 Indicates a successful or positive action
+    btn-info                    Indicates a button for informational alert messages
+    btn-warning                 Indicates caution should be taken with this action
+    btn-danger                  Indicates a dangerous or potentially negative action
+    btn-link                    Deemphasize a button by making it look like a link while maintaining a button behavior
+
+    Changing Bitton Size
+    Button Class                Size
+    btn-lg                      Large
+    btn-sm                      Small
+    btn-xs                      Extra Small
+-->
+<div class="container">
+    <div class="row">
+        <!-- the button without bootstrap -->
+        <div class="col-12">
+            <br />
+
+            <button>Button</button>
+            <input type="button" value="Input" />
+            <input type="submit" value="Input" />
+
+        </div>
+        <br />
+        <!-- the button with bootstrap -->
+        <div class="col-12">
+            <br />
+
+            <button class="btn btn-outline-primary">Button</button>
+            <input class="btn btn-outline-primary" " type="button" value="Input" />
+            <input class="btn btn-outline-primary" " type="submit" value="Input" />
+
+            <br />
+            <br />
+            <button class="btn btn-outline-light">btn-light</button>
+            <button class="btn btn-outline-primary">btn-primary</button>
+            <button class="btn btn-outline-success">btn-success</button>
+            <button class="btn btn-outline-info">btn-info</button>
+            <button class="btn btn-outline-warning">btn-warning</button>
+            <button class="btn btn-outline-danger">btn-danger</button>
+            <button class="btn btn-link">btn-link</button>
+
+            <br />
+            <br />
+            <a href="#">Hyperlink</a>
+
+            <br />
+            <br />
+            <a href="#" class="btn">Hyperlink</a>
+
+            <br />
+            <br />
+            <!-- looks like a button but is still a hyperlink-->
+            <a href="#" class="btn btn-primary">Hyperlink</a>
+
+            <br />
+            <br />
+            <button class="btn btn-outline-primary btn-lg">btn-primary</button>
+            <button class="btn btn-outline-primary btn-sm">btn-primary</button>
+            <!-- there is no btn-xs -->
+            <button class="btn btn-outline-primary btn-xs">btn-primary</button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div>
+                <button class="btn btn-outline-primary btn-block">Button 1</button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div>
+                <button class="btn btn-outline-primary btn-block">Button 2</button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div>
+                <button class="btn btn-outline-primary btn-block">Button 3</button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div>
+                <button class="btn btn-outline-primary btn-block">Button 4</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- disabled button -->
+    <div class="row">
+        <button class="btn btn-outline-primary" disabled="disabled">Disabled</button>
+    </div>
+    <br />
+    <!-- disabled hyperlink, is not disabled -->
+    <div class="row">
+        <a href="#" class="btn btn-outline-primary" disabled="disabled">Hyperlink, disabled</a>
+    </div>
+</div>

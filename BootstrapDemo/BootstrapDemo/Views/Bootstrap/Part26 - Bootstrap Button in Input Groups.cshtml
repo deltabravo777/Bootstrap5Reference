@@ -1,0 +1,134 @@
+﻿<!--
+    
+    Bootstrap Button in Input Groups
+    ----------------------------------------------------------
+    to use a button in an input group use input-group-btn class instead of input-group-addon class
+
+
+-->
+<div class="container">
+    <h5>using input-group-addon, which is not a bootstrap5 class, this doesnt work</h5>
+    <div class="row">
+        <div class="col-3">
+
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="radio" class="d-flex align-content-center" />
+                </span>
+                <input type="text" class="form-control" placeholder="Default" />
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>this works</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-send-check"></i></span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>using input-group-button</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control" aria-label="Whatever you want to search for">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-outline-dark">Search</button>
+            </span>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>using input-group-button and dropdown</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control" aria-label="Whatever you want to search for">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+                    Dropdown
+                    <!--<span class="bi-caret-down"></span>-->
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="btn" href="#">Action 1</a></li>
+                    <li><a class="btn" href="#">Action 2</a></li>
+                    <li><a class="btn" href="#">Action 3</a></li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>how to make a segmented dropdown button</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control" aria-label="Whatever you want to search for">
+            <span class="input-group-btn">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark">Action</button>
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
+                        <!--<span class="bi-caret-down"></span>-->
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="btn" href="#">Action 1</a></li>
+                        <li><a class="btn" href="#">Action 2</a></li>
+                        <li><a class="btn" href="#">Action 3</a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>cut copy paste</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Default" />
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark">Cut</button>
+                    <button type="button" class="btn btn-outline-dark">Copy</button>
+                    <button type="button" class="btn btn-outline-dark">Paste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>using icons</h5>
+    <div class="row col-5">
+        <div class="input-group mb-3">
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Default" />
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark"><i class="bi bi-align-start"></i></button>
+                    <button type="button" class="btn btn-outline-dark"><i class="bi bi-align-center"></i></button>
+                    <button type="button" class="btn btn-outline-dark"><i class="bi bi-align-end"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

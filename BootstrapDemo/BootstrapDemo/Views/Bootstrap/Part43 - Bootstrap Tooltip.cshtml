@@ -1,0 +1,46 @@
+﻿<!--
+
+    Bootstrap Tooltip
+    -------------------------------------------------
+
+    Options to customize tooltip behavior
+    
+    Option              Description
+    placement           placement can be on top, bottom, left or right. default is top
+    title               title for the loop
+    animation           animates the tooltip. value can be true or false. default is true
+    delay               time delay for showing and hiding the tooltip. value can be number in milliseconds or an object
+    html                specifies the HTML for the tooltip. value can be true or false. default is true
+
+
+-->
+<div class="container">
+    <div>
+        <br />
+        <br />
+        <br />
+        <button type="button" class="btn btn-secondary" rel="tooltip" data-toggle="tooltip" data-placement="top"
+                title="Tooltip on top"
+                animation:true, delay:1500>
+            Tooltip on top
+        </button>
+        <br />
+        <br />
+        <button type="button" class="btn btn-secondary" rel="tooltip" data-toggle="tooltip" data-placement="top"
+                data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+                animation:true, delay:1500>
+            Tooltip on top
+        </button>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        alert('hello');
+        
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        
+    </script>
+}

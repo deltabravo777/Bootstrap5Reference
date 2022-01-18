@@ -1,0 +1,173 @@
+﻿<!---
+
+    Bootstrap Scrollspy
+    ------------------------------------------------------
+    the scrollspy plugin automatically highlights the navigation links based on the scroll
+    position to indicate where the user is currently on the page
+
+    Scrollspy Configuration
+    data-spy="scroll"               this attribute is applied on the element that is being spied on. in most cases this
+                                    is the body element
+    data-target="#mainNavBar"       this attribute links the scrollable element (body element) with the navigation element
+                                    (navbar). this attribute is also applied on the body element in most cases
+    data-offset="10"                specifies the number of pixels to offset from top when calculating the position
+                                    of scroll. this is extremely useful to control when the navigation links are highlighted
+                                    as the page is being scrolled. this attribute is optional and the default is 10 pixels
+
+    the navigation menu items are linked to the scrollable section on the page, by making the href attribute
+    of the navigation item point to the id of the scrollable section
+
+    the element with data-spy="scroll" requires the CS5 position to the relative
+
+-->
+
+<nav id="navbar-example2" class="navbar navbar-light fixed-top bg-light px-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="200" class="scrollspy-example" tabindex="0">
+
+    <div id="scrollspyHeading1" class="divStyle">
+        <h6>Rocks Beach Sunrise</h6>
+        <img src="~/images/rocks-beach-sunrise.jpg" class="img-fluid" />
+        <br />
+    </div>
+
+    <div id="scrollspyHeading2" class="divStyle">
+        <h6>Rock Formation Silent</h6>
+        <img src="~/images/rock-formation-silent.jpg" class="img-fluid" />
+        <br />
+    </div>
+
+    <div id="scrollspyHeading3" class="divStyle">
+        <h6>Reflection at Quinag Mountains</h6>
+        <img src="~/images/reflections-at-quinag-mountains.jpg" class="img-fluid" />
+        <br />
+    </div>
+
+    <div id="scrollspyHeading4" class="divStyle">
+        <h6>Reflection of Trees in Lake Piburger</h6>
+        <img src="~/images/reflection-of-trees-in-lake-piburger.jpg" class="img-fluid" />
+        <br />
+    </div>
+
+    <div id="scrollspyHeading5" class="divStyle">
+        <h6>Red Sky Morning Winter Snow Bench</h6>
+        <img src="~/images/red-sky-morning-winter-snow-bench.jpg" class="img-fluid" />
+        <br />
+    </div>
+    <br />
+    <br />
+
+</div>
+
+<!--
+<div class="data-spy">
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#divRocksBeach">Rocks Beach Sunrise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#divRockFormation">Rock Formation Silent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#divReflectionQuinag">Reflection at Quinag Mountains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#divReflectionTrees">Reflection of Trees in Lake Piburger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#divRedSky">Red Sky Morning Winter Snow Bench</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#divReflectionTrees">Reflection of Trees in Lake Piburger</a></li>
+                                <li><a class="dropdown-item" href="#divRedSky">Red Sky Morning Winter Snow Bench</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row col-sm-12">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div id="divRocksBeach" class="divStyle">
+                <h6>Rocks Beach Sunrise</h6>
+                <img src="~/images/rocks-beach-sunrise.jpg" class="img-fluid" />
+                <br />
+            </div>
+
+            <div id="divRockFormation" class="divStyle">
+                <h6>Rock Formation Silent</h6>
+                <img src="~/images/rock-formation-silent.jpg" class="img-fluid" />
+                <br />
+            </div>
+
+            <div id="divReflectionQuinag" class="divStyle">
+                <h6>Reflection at Quinag Mountains</h6>
+                <img src="~/images/reflections-at-quinag-mountains.jpg" class="img-fluid" />
+                <br />
+            </div>
+
+            <div id="divReflectionTrees" class="divStyle">
+                <h6>Reflection of Trees in Lake Piburger</h6>
+                <img src="~/images/reflection-of-trees-in-lake-piburger.jpg" class="img-fluid" />
+                <br />
+            </div>
+
+            <div id="divRedSky" class="divStyle">
+                <h6>Red Sky Morning Winter Snow Bench</h6>
+                <img src="~/images/red-sky-morning-winter-snow-bench.jpg" class="img-fluid" />
+                <br />
+            </div>
+
+        </div>
+    </div>
+</div>
+    -->
+
+@section scripts{ 
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+        });
+
+    </script>
+
+}
