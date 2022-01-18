@@ -1,0 +1,103 @@
+﻿<!--
+    
+    Bootstrap Paragraphs
+    ----------------------------------------------------------
+    Global defaults applied to the <body> and all paragraph <p> elements
+    
+    Bootstrap's Global Defaults
+    Font Size       14px
+    Line Height     1.428
+
+    Bootstrap Inline Text Elements
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Purpose                 Tag
+    Underline               <u>
+    Strikethrough           <s>
+    Highlight               <mark>
+    Emphasize or Italicize  <em>
+    Bold                    <strong>
+    Subscript               <sub>
+    Superscript             <sup>
+
+    Bootstrap Text Alignment Classes
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Class                   Purpose
+    text-left               Left Align
+    text-center             Center Align
+    text-right              Right Align
+    text-justify            Justify
+    text-nowrap             nowrap
+
+    Bootstrap Transformation Classes
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    text-lowercase          Convert to lowercase
+    text-uppercase          Convert to uppercase
+    text-capitalize         Capitalize first letter of every word
+
+    > Lead Paragraph: to make a paragraph stand out from the other paragraph elements 
+    use the .lead class
+
+    > Abbreviations: abbreviations with a title attribute displays a dotted underline. when the
+    mouse is over the abbreviation, the pointer becomes a help cursor and the title attribute
+    value is displayed as a tooltip
+
+    > Please note: for a slightly smaller font-size apply .initialism class
+
+-->
+
+<div class="container">
+    <div class="row">
+        <p>Hello Bootstrap</p>
+    </div>
+    <div>
+        <hr />
+        <p><u>This text will be underlined</u></p>
+        <p><s>This text will be striken through</s></p>
+        <p><mark>This text will be highlighted</mark></p>
+        <p><em>This text will be italicized</em></p>
+        <p><strong>This text will be bold</strong></p>
+        <p>
+            This is <sub>subscript</sub> and
+            this is <sup>superscript</sup>
+        </p>
+    </div>
+    <div>
+        <hr />
+        <p class="text-left">Left aligned text,</p>
+        <p class="text-center">Center aligned text,</p>
+        <p class="text-right">Right aligned text,</p>
+        <p class="text-justify">
+            The text in this paragraph will be justified.
+            Bootstrap is a free, open-source and is the most popular HTML,
+            CSS, and JavaScript framework
+        </p>
+        <p class="text-nowrap">
+            This text will not wrap and you will get a horizontal scrollar
+            if there is no space on the screen the view
+        </p>
+    </div>
+    <div>
+        <hr />
+        <p class="text-lowercase">
+            All the Letters Will Be in Lowercase
+        </p>
+        <p class="text-uppercase">
+            All the Letters Will Be in Uppercase
+        </p>
+        <p class="text-capitalize">
+            First letter of every word will be capitalized
+        </p>
+    </div>
+    <div>
+        <hr />
+        <p class="lead">
+            What is Bootstrap
+        </p>
+        <p>
+            Bootstrap is a free, open-source and is the most popular
+            HTML, CSS, and JavaScript framework
+        </p>
+        <abbr title="British Broadcasting Corporation">BBC</abbr>
+        <abbr title="British Broadcasting Corporation" class="initialism">BBC</abbr>
+    </div>
+</div>

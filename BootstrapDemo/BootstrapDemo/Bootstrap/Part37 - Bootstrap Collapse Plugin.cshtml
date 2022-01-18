@@ -1,0 +1,119 @@
+﻿<!--
+
+    Bootstrap Collapse Plugin
+    --------------------------------------------------------
+    Event                   Description
+    show.bs.collapse        fired immediately when the show method is called
+    shown.ns.collapse       fired when a collapse element has been made visible to the user
+    hide.bs.collapse        fired immediately when the hide method is called
+    hidden.bs.collapse      fired when a collapse element has been hidden from the user
+
+
+-->
+<div class="container">
+    <div class="row">
+        <div class="card d-flex">
+            <button class="btn btn-outline-primary col-2" id="toggleButton">
+                Toggle Image Gallary
+            </button>
+            <button class="btn btn-outline-primary col-2" id="hideButton">
+                Toggle Image Gallary
+            </button>
+            <button class="btn btn-outline-primary col-2" id="showButton">
+                Toggle Image Gallary
+            </button>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <div class="col-4 d-flex">
+                    <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#imageGallary" role="button">
+                        Toggle Image Gallary
+                    </a>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#imageGallary">
+                        Another Toggle
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse" id="imageGallary">
+                <div class="card-body row">
+                    <div class="col-sm-4">
+                        <a href="~/images/brown-mountain.jpg" class="img-thumbnail">
+                            <p>Brown Mountains</p>
+                            <img src="~/images/brown-mountain.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="~/images/rocks-beach-sunrise.jpg" class="img-thumbnail">
+                            <p>Rocks Beach Sunrise</p>
+                            <img src="~/images/rocks-beach-sunrise.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="~/images/portugal-sunrises-and-sunsets.jpg" class="img-thumbnail">
+                            <p>Portugal Sunrise and Sunsets</p>
+                            <img src="~/images/portugal-sunrises-and-sunsets.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br />
+    <br />
+
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-bs-target
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        alert('hello');
+
+        $(document).ready(function () {
+            $('#toggleButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('toggle');
+            });
+            $('#hideButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('hide');
+            });
+            $('#showButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('show');
+            });
+
+            $('#imageGallary').on('show.bs.collapse', function () {
+                alert('Image Gallary is about to be expanded');
+            });
+            $('#imageGallary').on('shown.bs.collapse', function () {
+                alert('Image Gallary expanded');
+            });
+            $('#imageGallary').on('hide.bs.collapse', function () {
+                alert('Image Gallary is about to be hidden');
+            });
+            $('#imageGallary').on('hidden.bs.collapse', function () {
+                alert('Image Gallary is hidden');
+            });
+        });
+
+    </script>
+}

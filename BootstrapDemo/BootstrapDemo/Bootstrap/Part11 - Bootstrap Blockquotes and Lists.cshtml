@@ -1,0 +1,75 @@
+﻿<!--
+
+    Bootstrap Blockquotes and Lists
+    -------------------------------
+    ! add the blockquote-footer class to the <footer> element
+    ! no blockquote-reverse
+
+    Tag/Class                   Purpose
+    <ol> and <li> tags          For creating an ordered list
+    <ul> and <li> tags          For creating an unordered list
+    .list-inline class          To place all list items of an ordered or unordered list on a single line
+    .list-unstyled class        To remove the default list-style of ordered and unordered lists
+    <dl> <dt> and <dd> tags     For creating a list of terms with their associated descriptions
+    .dl-horizontal class        To make terms and descriptions in <dl> line up side-by-side
+
+    ! list-inline does not work in bootstrap 5
+    ! could try this: 
+    .form-control {
+        display:inline;
+        width:auto;
+    }
+    ! no dl-horizontal in bootstrap5
+
+-->
+<div class="container">
+    <div class="row">
+        <blockquote>
+            <p>By failing to prepare, you are preparing to fail</p>
+            <footer class="blockquote-footer text-right">This famous quote is by <cite title="Benjamin Franklin">Benjamin Franklin</cite></footer>
+        </blockquote>
+    </div>
+</div>
+<div class="container">
+    <hr />
+    <div class="row">
+        <ol>
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Australia</li>
+            <li>Canada</li>
+        </ol>
+    </div>
+    <hr />
+    <div class="row">
+        <ol class="list-inline">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Australia</li>
+            <li>Canada</li>
+        </ol>
+    </div>
+    <hr />
+    <div class="row">
+        <ol class="list-unstyled">
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>Australia</li>
+            <li>Canada</li>
+        </ol>
+    </div>
+    <hr />
+    <dl>
+        <dt>ASP.NET</dt>
+        <dd>Framework for developing web applications</dd>
+
+        <dt>jQuery</dt>
+        <dd>JavaScript library that works across a multitude of browsers</dd>
+
+        <dt>SQL</dt>
+        <dd>The standard language for relational database management systems</dd>
+    </dl>
+</div>

@@ -1,0 +1,179 @@
+﻿<!--
+    
+    Bootstrap Dropdown
+    ---------------------------------------------------
+    Class / Attribute                       Purpose
+    dropdown                                specifies a dropdown menu
+    dropdown-toggle                         specifies the trigger element i.e. the element which shows or hides
+                                            the dropdown meny. in this example, the trigger element is the button
+    data-toggle="dropdown"                  this attribute is required on the trigger element to show or hide the dropdown menu
+    caret                                   displays the triangle pointing downwards on the button indicating it is a dropdown menu
+    dropdown-menu                           the unordered list with this class specifies the dropdown meny items
+
+    for bootstrap5 use dropdown-item class on each <li>
+    * they will be properly disabled though they don't automatically show up as grey
+-->
+<div class="container">
+    <h5>Making a dropdown</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- using buttons instead of hyperlinks -->
+    <h5>using buttons instead of hyperlinks</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- now using bootstrap button classes -->
+    <h5>now using bootstrap button classes</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- now with dropdown menu header -->
+    <h5>now with dropdown menu header</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header"><striong>Header 1</striong></li>
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                    <li class="dropdown-header"><striong>Header 2</striong></li>
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- now with a menu divider -->
+    <h5>now with a menu divider</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header"><striong>Header 1</striong></li>
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-header"><striong>Header 2</striong></li>
+                    <li><a href="#">Action 1</a></li>
+                    <li><a href="#">Action 2</a></li>
+                    <li><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- how to disable a meny item -->
+    <h5>how to disable a meny item</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header"><striong>Header 1</striong></li>
+                    <li class="dropdown-item"><a href="#">Action 1</a></li>
+                    <li class="dropdown-item disabled"><a href="#">Action 2</a></li>
+                    <li class="dropdown-item"><a href="#">Action 3</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-header"><striong>Header 2</striong></li>
+                    <li class="dropdown-item"><a href="#">Action 1</a></li>
+                    <li class="dropdown-item disabled"><a href="#">Action 2</a></li>
+                    <li class="dropdown-item"><a href="#">Action 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- how to make them expand upwards -->
+    <h5>how to make them expand upwards</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <div class="dropup">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Dropdown <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><striong>Header 1</striong></li>
+                        <li class="dropdown-item"><a href="#">Action 1</a></li>
+                        <li class="dropdown-item disabled"><a href="#">Action 2</a></li>
+                        <li class="dropdown-item"><a href="#">Action 3</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-header"><striong>Header 2</striong></li>
+                        <li class="dropdown-item"><a href="#">Action 1</a></li>
+                        <li class="dropdown-item disabled"><a href="#">Action 2</a></li>
+                        <li class="dropdown-item"><a href="#">Action 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

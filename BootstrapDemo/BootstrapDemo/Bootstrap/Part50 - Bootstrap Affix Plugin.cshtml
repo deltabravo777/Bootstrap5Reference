@@ -1,0 +1,80 @@
+﻿<!--
+    
+    Bootstrap Affix Plugin
+    -------------------------------------------------
+    the bootstrap affix plugin is used to pin elements such as a navbar when they are scrolled beyond
+    a certain point
+
+    Affix plugin attributes
+    Attribute               Purpose
+    data-spy="affex"        apply this attribute on the element that you want to affix
+    data-offset-top         specifies when to toggle the pinning of an element
+
+    no real documentation for this on the bootstrap website. skip for now
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="bg-light p-4">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"  tabindex="0">
+            <div id="list-example" class="list-group" data-spy="affix" data-offset-top="200">
+                <a class="list-group-item list-group-item-action" href="#scrollspyHeading1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#scrollspyHeading2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#scrollspyHeading3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#scrollspyHeading4">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#scrollspyHeading5">Item 4</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div id="scrollspyHeading1" class="divStyle">
+                    <h6>Rocks Beach Sunrise</h6>
+                    <img src="~/images/rocks-beach-sunrise.jpg" class="img-fluid" />
+                    <br />
+                </div>
+
+                <div id="scrollspyHeading2" class="divStyle">
+                    <h6>Rock Formation Silent</h6>
+                    <img src="~/images/rock-formation-silent.jpg" class="img-fluid" />
+                    <br />
+                </div>
+
+                <div id="scrollspyHeading3" class="divStyle">
+                    <h6>Reflection at Quinag Mountains</h6>
+                    <img src="~/images/reflections-at-quinag-mountains.jpg" class="img-fluid" />
+                    <br />
+                </div>
+
+                <div id="scrollspyHeading4" class="divStyle">
+                    <h6>Reflection of Trees in Lake Piburger</h6>
+                    <img src="~/images/reflection-of-trees-in-lake-piburger.jpg" class="img-fluid" />
+                    <br />
+                </div>
+
+                <div id="scrollspyHeading5" class="divStyle">
+                    <h6>Red Sky Morning Winter Snow Bench</h6>
+                    <img src="~/images/red-sky-morning-winter-snow-bench.jpg" class="img-fluid" />
+                    <br />
+                </div>
+            </div>
+        </div>
+    
+
+    
+    <br />
+    <br />
+
+
+</div>

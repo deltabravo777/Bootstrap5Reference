@@ -1,0 +1,171 @@
+﻿<!--
+    
+    Bootstrap nav Component
+    -----------------------------------------------------------
+    Bootstrap nav component makes it very easy to create navigation components i.e. navigation
+    tabs and pills
+
+    Class               Purpose
+    nav nav-tabs        navigation tabs
+    nav nav-pills       navigation pills
+    nav-stacked         vertically stacked navigation pills
+    nav-justified       justified pills or tabs. on screen size <768px, the navigation links are stacked
+    disabled            disabled navigation tab or pill
+    active              to make the navigation tab or pill active
+    * please note: dropdown menu can also be used with navigation tabs and pills
+
+
+-->
+<div class="container">
+    <h5>These are not tabs but buttons</h5>
+    <div class="row">
+        <form>
+            <div class="row">
+                <div class="col-12">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#" class="btn btn-outline-dark">Home</a></li>
+                        <li><a href="#" class="btn btn-outline-dark">Contact</a></li>
+                        <li><a href="#" class="btn btn-outline-dark">About</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <h5>These are tabs in bootstrap 5</h5>
+    <div class="row">
+        <form>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <h5>These are tabs in bootstrap 5</h5>
+    <div class="row">
+        <form>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <h5>home pills with icons</h5>
+    <div class="row">
+        <form>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-telephone"></i> Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-text-paragraph"></i> About</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <h5>navbar as tabs</h5>
+    <div class="row">
+        <div class="col-lg-12">
+            <form>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-telephone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-text-paragraph"></i> About</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>navbar as pills</h5>
+    <div class="row">
+        <div class="col-lg-12">
+            <form>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark" href="#"><i class="bi bi-telephone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark" href="#"><i class="bi bi-text-paragraph"></i> About</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>navbar wuith dropdown</h5>
+    <div class="row">
+        <div class="col-lg-12">
+            <form>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark" href="#"><i class="bi bi-telephone"></i> Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link btn btn-outline-dark" data-toggle="dropdown" href="#"><i class="bi bi-text-paragraph"></i> About
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="btn">Mission</a></li>
+                            <li><a href="#" class="btn">Vision</a></li>
+                            <li><a href="#" class="btn">Products</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

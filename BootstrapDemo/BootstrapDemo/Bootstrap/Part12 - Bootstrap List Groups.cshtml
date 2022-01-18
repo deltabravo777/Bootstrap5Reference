@@ -1,0 +1,92 @@
+﻿<!--
+    
+    Bootstrap List Groups
+    -------------------------------------------------
+    Basic List group
+    - [ India ]
+    - [ USA ]
+    - [ UK ]
+
+    > With hyperlinks:
+        use <div> instead of <ul>
+        use <a> instead of <li>
+
+    Contextual Classes
+    .list-group-item-danger
+    .list-group-item-info
+    .list-group-item-success
+    .list-group-item-warning
+
+    > Highlight and disable list group items: use .active and .disabled classes respectively
+
+    List group with custom content
+    .list-group-item
+    .list-group-heading
+    .list-group-text
+
+    ! list-group-item-heading is obselete in bootstrap5 so look at the code below for how this is done
+
+-->
+<div class="container">
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item">India</li>
+            <li class="list-group-item">USA</li>
+            <li class="list-group-item">UK</li>
+            <li class="list-group-item">Australia <span class="badge">New</span></li>
+        </ul>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="float-left">
+            <a href="http://dell.com" class="list-group-item">Dell</a>
+            <a href="http://google.com" class="list-group-item">Google</a>
+            <a href="http://microsoft.com" class="list-group-item">Microsoft</a>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-danger">India</li>
+            <li class="list-group-item list-group-item-info">USA</li>
+            <li class="list-group-item list-group-item-success">UK</li>
+            <li class="list-group-item list-group-item-warning">Australia <span class="badge">New</span></li>
+        </ul>
+    </div>
+    <hr />
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item disabled">Disabled Item</li>
+            <li class="list-group-item active">Active Item</li>
+            <li class="list-group-item">Other Item 1</li>
+            <li class="list-group-item">Other Item 2</li>
+        </ul>
+    </div>
+    <hr />
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph.</p>
+            <small>And some small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph.</p>
+            <small class="text-muted">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Some placeholder content in a paragraph.</p>
+            <small class="text-muted">And some muted small print.</small>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,121 @@
+﻿<!--
+    
+    Bootstrap Form Controls
+    -----------------------------------------------------------------
+    Form Controls:
+    input
+    textarea
+    checkbox
+    radio
+    select
+
+    ! there is a checkbox-inline class that is not in bootstrap 5 since they are inline by default in the code below
+-->
+<div class="container">
+    <h5>Here is a bootstrap stylesheet reference</h5>
+    <div class="row">
+        <form>
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text" id="inputName" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+                <label for="inputDOB">Date of Birth</label>
+                <input class="form-control" type="date" id="inputDOB" />
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input class="form-control" type="email" id="inputEmail" placeholder="Email Address" />
+            </div>
+            <div class="form-group">
+                <label for="inputExperience">Work Experience</label>
+                <input class="form-control" type="number" id="inputExperience" placeholder="Total experience in years" />
+            </div>
+            <div class="form-group">
+                <label for="inputUrl">Personal Website</label>
+                <input class="form-control" type="url" id="inputUrl" placeholder="Your website address" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br />
+        <br />
+
+        <h5>Another form control</h5>
+        <form>
+            <div class="form-group">
+                <label for="inputDescription">Product Description</label>
+                <textarea class="form-control" id="inputDescription" rows="5"
+                          placeholder="Full Product Description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br />
+        <br />
+
+        <h5>Using checkboxes</h5>
+        <form>
+            <div class="custom-checkbox">
+                <label>
+                    <input type="checkbox" value="option1" />
+                    Option 1
+                </label>
+                <label>
+                    <input type="checkbox" value="option2" />
+                    Option 2
+                </label>
+                <label>
+                    <input type="checkbox" value="option3" />
+                    Option 3
+                </label>
+                <label>
+                    <input disabled type="checkbox" value="option3" />
+                    Option 4, disabled
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br />
+        <br />
+
+        <h5>Using radio buttons</h5>
+        <form>
+            <div class="custom-radio">
+                <label>
+                    <input type="radio" name="radioGroup" value="1" />
+                    Option 1
+                </label>
+                <label>
+                    <input type="radio" name="radioGroup" value="2" />
+                    Option 2
+                </label>
+                <label>
+                    <input type="radio" name="radioGroup" value="3" />
+                    Option 3
+                </label>
+                <label>
+                    <input disabled type="radio" name="radioGroup" value="3" />
+                    Option 4, disabled
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br />
+        <br />
+
+        <h5>Using select elements</h5>
+        <form>
+            <br />
+            <select multiple class="form-control">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+                <option>Option 6</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <br />
+        <br />
+    </div>
+</div>

@@ -1,0 +1,128 @@
+﻿<!--
+    
+    Bootstrap Disabled and Readonly Form Controls
+    ------------------------------------------------------------------
+    Classes / Attributes used to disable or make form controls readonly
+    Class / Attribute           Purpose
+    disabled                    to disable individual controls or all the controls in a fieldset
+    readonyl                    to make form input controls readonly
+    form-control-static         to display plain text to a label within a form
+
+    ! again, form-horizontal is not in bootstrap 5
+-->
+<div class="container">
+    <h5>a form</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <form>
+                <input type="text" class="form-control" placeholder="Your full name" />
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>disabled textbox form</h5>
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <form>
+                <input disabled type="text" class="form-control" placeholder="Your full name" />
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h5>A set of forms in a fieldset</h5>
+    <form>
+        <fieldset>
+            <div class="form-group">
+                <label for="txtName">Name</label>
+                <input type="text" id="txtName" class="forn-control"
+                       placeholder="Your full name" />
+            </div>
+            <div class="form-group"
+                <label for="selectGender">Gender</label>
+                <select id="selectGender" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="custom-checkbox">
+                <label>
+                    <input type="checkbox" /> I agree
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+    <br />
+    <br />
+
+    <h5>A set of forms in a fieldset, all the inputs disabled</h5>
+    <form>
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="txtName">Name</label>
+                <input type="text" id="txtName" class="forn-control"
+                       placeholder="Your full name" />
+            </div>
+            <div class="form-group"
+                <label for="selectGender">Gender</label>
+                <select id="selectGender" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="custom-checkbox">
+                <label>
+                    <input type="checkbox" /> I agree
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+    <br />
+    <br />
+
+    <h5>A set of forms in a fieldset, all the inputs are readonly, they are like disabled but not stopsign when you hover the cursor</h5>
+    <form>
+        <input disabled class="form-control" type="text" placeholder="Your name" />
+        <br />
+
+        <input readonly class="form-control" type="text" placeholder="Your name" />
+
+    </form>
+    <br />
+    <br />
+
+    <h5>another form</h5>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-2 custom-control-label">Id</label>
+            <div class="col-10">
+                <p class="form-control-static"></p>101
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="textFirstName" class="col-2 custom-control-label">First Name</label>
+            <div class="col-10">
+                <input type="text" class="form-control" id="textFirstName"
+                       placeholder="Your first name"?
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtLastName" class="col-2 custom-control-label">Last Name</label>
+            <div class="col-10">
+                <input type="text" class="form-control" id="textLastName"
+                       placeholder="Your last name" />
+            </div>
+        </div>
+    </form>
+    <br />
+    <br />
+</div>

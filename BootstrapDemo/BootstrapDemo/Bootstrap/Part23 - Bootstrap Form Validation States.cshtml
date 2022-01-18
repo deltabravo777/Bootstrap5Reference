@@ -1,0 +1,98 @@
+﻿<!--
+
+    Bootstrap Form Validation States
+    --------------------------------------------------------------------
+    Class               Glyphicon                           Purpose
+    has-success         glyphicon glyphicon-ok              success valdiation state
+    has-warning         glyphicon glyphicon-warning-sign    warning valdiation state
+    has-error           glyphicon glyphicon-remove          error valdiation state
+
+    ! has-success
+    ! has-warning
+    use alert alert-warning instead
+
+    * layout is funky
+-->
+
+<i class="bi bi-send-check"></i>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br />
+
+            <form class="d-inline-block">
+                <div class="form-group alert alert-primary">
+                    <label class="col-2 custom-control-label" for="txtStrongPassword">Password</label>
+                    <div class="col-10">
+                        <div class="input-group">
+                            <span class="input-group-append">$</span>
+                            <input type="password" id="textStrongPassword" class="form-control"
+                                   placeholder="Your password" />
+                        </div>
+                        <span>
+                            <i class="bi bi-check"></i>
+                        </span>
+                        <span class="">Strong Password</span>
+                    </div>
+                </div>
+                <div class="form-group alert alert-warning">
+                    <label class="col-2 custom-control-label" for="txtStrongPassword">Password</label>
+                    <div class="col-10">
+                        <input type="password" id="textStrongPassword" class="form-control"
+                               placeholder="Your password" />
+                        <i class="bi bi-exclamation"></i>
+                        <span class="">Weak Password</span>
+                    </div>
+                </div>
+                <div class="form-group alert alert-danger">
+                    <label class="col-2 custom-control-label" for="txtStrongPassword">Password</label>
+                    <div class="col-10">
+                        <input type="password" id="textStrongPassword" class="form-control"
+                               placeholder="Your password" />
+                        <i class="bi bi-cloud-lightning"></i>
+                        <span class="">Invalid Age</span>
+                    </div>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- this works -->
+<!--
+<img src="~/lib/bootstrap-icons/icons/alarm.svg" />
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-check" viewBox="0 0 16 16">
+    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855a.75.75 0 0 0-.124 1.329l4.995 3.178 1.531 2.406a.5.5 0 0 0 .844-.536L6.637 10.07l7.494-7.494-1.895 4.738a.5.5 0 1 0 .928.372l2.8-7Zm-2.54 1.183L5.93 9.363 1.591 6.602l11.833-4.733Z" />
+    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
+</svg>
+    -->
+
+<!-- this does not work
+
+<svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#heart-fill" />
+</svg>
+<svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#toggles" />
+</svg>
+<svg class="bi" width="32" height="32" fill="currentColor">
+    <use xlink:href="bootstrap-icons.svg#shop" />
+</svg>
+
+<svg class="bi" width="32" height="32" fill="currentColor" role="img" aria-label="Tools">
+    <use href="~/lib/bootstrap-icons/icons/alarm.svg" />
+</svg>
+
+<div width="32" height="32">
+    <use href="~/lib/bootstrap-icons/icons/alarm.svg" />
+</div>
+
+<img src="/assets/img/bootstrap.svg" role="img" alt="Bootstrap" width="32" height="32">
+
+<i role="img" className="icon bi-envelope"></i>
+-->

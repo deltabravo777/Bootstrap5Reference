@@ -1,0 +1,50 @@
+﻿<!--
+
+    Bootstrap Nested Rows and Columns
+    ----------------------------------------------------------------
+    Bootstrap supports nested rows and columns. this means rows and columns can be placed inside
+    an existing columns
+
+    -- col-xs-3 does not exist for bootstrap5
+
+    making a 5 : 3.5 : 3.5 ratio, its easier to do with nested rows and columns
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sidebarContent">Side Bar 1</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sidebarContent">Side Bar 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="mainContent">Main Content Area</div>
+        </div>
+    </div>
+</div>
+
+<!-- Create 3 columns and the columns should be split col 5 | col 3.5 | col 3.5 -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="customDiv">Col 5</div>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="customDiv"> Col 3.5</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="customDiv"> Col 3.5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

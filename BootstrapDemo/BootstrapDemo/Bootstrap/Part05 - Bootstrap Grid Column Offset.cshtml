@@ -1,0 +1,115 @@
+﻿<!--
+
+    Bootstrap Grid Column Offset
+    ------------------------------------------------------------------------
+    When creating website layouts using the grid system, you may want to move grid
+    columns to the right for alignment purpose
+
+    Bootstrap Grid Classes              Bootstrap Offset Classes
+    .col-xs-*                           .col-xs-offset-*
+    .col-sm-*                           .col-sm-offset-*
+    .col-md-*                           .col-md-offset-*
+    .col-lg-*                           .col-lg-offset-*
+
+    col-md-offset-3 is now just offset-3
+    img-responsive is a bootstrap3 feature that is not needed or used in bootstrap5
+    img-circle "
+    img-thumbnail works in bootstrap5
+    img-rounded "
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column2</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column3</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column4</div>
+        </div>
+    </div>
+</div>
+
+<div>If we want to center the top two columns, we push it to the right by three columns</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 offset-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column2</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column3</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column4</div>
+        </div>
+    </div>
+</div>
+
+<div>Create 6 columns gap between the first and second columns in the first row</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3 offset-6">
+            <div class="customDiv">Column2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column2</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column3</div>
+        </div>
+        <div class="col-md-3">
+            <div class="customDiv">Column4</div>
+        </div>
+    </div>
+</div>
+
+<div>Create 3 equal columns in the second row. image in the front row should be centered</div>
+<div class="container">
+    <div class="row">
+        <img src="~/images/brown-mountain.jpg" class="col-md-4 offset-4 img-rounded img-thumbnail" />
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="customDiv">Column1</div>
+        </div>
+        <div class="col-md-4">
+            <div class="customDiv">Column2</div>
+        </div>
+        <div class="col-md-4">
+            <div class="customDiv">Column3</div>
+        </div>
+    </div>
+</div>
+

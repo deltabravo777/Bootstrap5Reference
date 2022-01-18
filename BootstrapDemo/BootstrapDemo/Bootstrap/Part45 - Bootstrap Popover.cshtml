@@ -1,0 +1,86 @@
+﻿<!--
+
+    Bootstrap Popover
+    -------------------------------------
+    Bootstrap popover is an extension to tooltip. the difference is popover has an option to
+    display both a title and content, while tooltip has an option to display a title
+
+    majority of the options, methods, and events of the popover plugin are very similar to tooltip
+    plugin
+
+    popover options         tooltip options
+    placement               placement
+    title                   title
+    trigger                 trigger
+    animation               animation
+    delay                   delay
+    html                    html
+
+    popover methods         tooltip methods
+    popover('show')         tooltip('show')
+    popover('hide')         tooltip('hide')
+    popover('toggle')       tooltip('toggle')
+
+    popover events          tooltip events
+    show.bs.popover         show.bs.tooltip
+    shown.bs.popover        shown.bs.tooltip
+    hide.bs.popover         hide.bs.tooltip
+    hidden.bs.popover       hidden.bs.tooltip
+
+-->
+<div class="container">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <button class="btn btn-outline-primary" id="btnPopover" data-placement="right" title="<b>Popover</b> Title"
+            data-popover-content="#yourContentHere"
+            data-toggle="popover">
+        Popover Example
+    </button>
+
+    <div id="yourContentHere" style="display:none;">
+        <div class="popover-body">
+            <h2>Hello again</h2>
+        </div>
+    </div>
+
+</div>
+
+
+@section scripts{
+    <script type="text/javascript">
+        alert('hello');
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        /*
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+        */
+
+        $(function () {
+            $('[data-toggle="popover"]').popover({
+                html: true,
+                sanitize: false,
+                content: function () {
+                    var content = $(this).attr("data-popover-content");
+                    return $(content).find(".popover-body").clone();
+                }
+            })
+        })
+
+    </script>
+
+}
+

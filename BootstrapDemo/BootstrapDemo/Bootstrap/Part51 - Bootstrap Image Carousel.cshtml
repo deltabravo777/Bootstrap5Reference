@@ -1,0 +1,79 @@
+﻿<!--
+
+    Bootstrap Image Carousel
+    -------------------------------------------
+
+    Class                   Description
+    carousel                creates a carousel
+    slide                   adds sliding animation effect when transitioning from one item to the other
+    carousel-inner          this class is apllied on the element that contains all the slides of the carousel
+    item                    specifies the content of each slide. content can be text and images
+    carousel-caption        specifies a caption for the carousel
+    caorusel-inidcators     adds the dot indicators at the bottom of each slide which indicates the current slide
+                            the user is viewing and the total number of slides
+    carousel-control        adds the left and right bottoms on the carousel to go back or forward one slide. to
+                            add left button, use left class with carousel-control class and to add right button
+                            use right class along with carousel-control
+
+
+    <ol class="carousel-indicators">
+                <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+                <li data-target="#imageCarousel" data-slide-to="3"></li>
+                <li data-target="#imageCarousel" data-slide-to="4"></li>
+            </ol>
+-->
+<div class="container">
+
+    <div id="carouselExampleControls" class="carousel slide" data-wrap="false" data-bs-ride="carousel">
+        <div class="carousel-inner" data-interval="500" style="height:500px; width:auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-item active">
+                <img src="~/images/rocks-beach-sunrise.jpg" class="d-block w-100 img-fluid" alt="..." style="object-fit:cover">
+                <div class="carousel-caption">
+                    Slide 1
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/rock-formation-silent.jpg" class="d-block w-100 img-fluid" alt="..." style="object-fit:cover">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/reflections-at-quinag-mountains.jpg" class="d-block w-100 img-fluid" alt="..." style="object-fit:cover">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/reflection-of-trees-in-lake-piburger.jpg" class="d-block w-100 img-fluid" alt="..." style="object-fit:cover">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/red-sky-morning-winter-snow-bench.jpg" class="d-block w-100 img-fluid" alt="..." style="object-fit:cover">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+@section scripts{
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel').carousel({
+          interval: 2000
+        })
+      });
+    </script>
+
+}

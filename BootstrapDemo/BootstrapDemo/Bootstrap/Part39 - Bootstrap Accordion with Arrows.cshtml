@@ -1,0 +1,129 @@
+﻿<!--
+
+    Bootstrap Accordion with Arrows
+    ------------------------------------------------------
+    * The bootstrap 5 accordions have arrows
+
+-->
+<div class="container">
+    <div class="row-sm-8">
+        <button class="btn btn-outline-primary" id="btnExpandAll">Expand All</button>
+        <button class="btn btn-outline-primary" id="btnCollapseAll">Collapse All</button>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pacific
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>India</li>
+                            <li>China</li>
+                            <li>Japan</li>
+                            <li>Korea</li>
+                            <li>Austrialia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Europe
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>United Kingdom</li>
+                            <li>Portugual</li>
+                            <li>Spain</li>
+                            <li>France</li>
+                            <li>Germany</li>
+                            <li>Italy</li>
+                            <li>Poland</li>
+                            <li>Switzerland</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    North America
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div>
+                        <ul>
+                            <li>United States</li>
+                            <li>Canada</li>
+                            <li>Mexico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        alert('hello');
+
+        /*
+        $(document).ready(function () {
+            $('#toggleButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('toggle');
+            });
+            $('#hideButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('hide');
+            });
+            $('#showButton').click(function () {
+                alert('hello again');
+                $('#imageGallary').collapse('show');
+            });
+
+            $('#imageGallary').on('show.bs.collapse', function () {
+                alert('Image Gallary is about to be expanded');
+            });
+            $('#imageGallary').on('shown.bs.collapse', function () {
+                alert('Image Gallary expanded');
+            });
+            $('#imageGallary').on('hide.bs.collapse', function () {
+                alert('Image Gallary is about to be hideen');
+            });
+            $('#imageGallary').on('hiden.bs.collapse', function () {
+                alert('Image Gallary is hidden');
+            });
+
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-down').removeClass('glyphiocn-menu-down').addClass('glyphicon-menu-up')
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-up').removeClass('glyphiocn-menu-up').addClass('glyphicon-menu-down')
+            });
+
+            $('#btnExpandAll').click(function () {
+                $('.panel-collapse.collapse').collapse('show');
+            });
+
+            $('#btnCollapseAll').click(function () {
+                $('.panel-collapse.collapse.in').collapse('hide');
+            });
+        });
+        */
+
+    </script>
+}
